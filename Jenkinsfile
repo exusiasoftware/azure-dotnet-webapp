@@ -1,14 +1,6 @@
 pipeline {
     agent any
-    stages {
-        
-        stage('Check in SCM') {
-            steps {
-                git url: 'https://exusiasoftware@bitbucket.org/exusiasoftware/insertmanager.git'
-                echo 'Download Complete...'
-            }
-        }
-                   
+    stages {                   
         stage('Build .Net Core') {
             steps {
               sh "pwd"

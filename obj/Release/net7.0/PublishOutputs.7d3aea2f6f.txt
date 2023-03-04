@@ -1,0 +1,7 @@
+/Users/brianrahming/dotnet/azure-dotnet-webapp/bin/Release/net7.0/publish/azure-web-test
+/Users/brianrahming/dotnet/azure-dotnet-webapp/bin/Release/net7.0/publish/appsettings.Development.json
+/Users/brianrahming/dotnet/azure-dotnet-webapp/bin/Release/net7.0/publish/appsettings.json
+/Users/brianrahming/dotnet/azure-dotnet-webapp/bin/Release/net7.0/publish/azure-web-test.dll
+/Users/brianrahming/dotnet/azure-dotnet-webapp/bin/Release/net7.0/publish/azure-web-test.deps.json
+/Users/brianrahming/dotnet/azure-dotnet-webapp/bin/Release/net7.0/publish/azure-web-test.runtimeconfig.json
+/Users/brianrahming/dotnet/azure-dotnet-webapp/bin/Release/net7.0/publish/azure-web-test.pdb

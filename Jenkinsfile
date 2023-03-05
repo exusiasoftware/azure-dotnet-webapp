@@ -10,7 +10,7 @@ pipeline {
         
         stage("Archive Build") {
             steps {
-                dir('bin/Release/net7.0') {
+                dir('bin/Release/net7.0/') {
                    sh "pwd"
                    sh "zip -r archive-${env.BUILD_ID}.zip publish"
                    archiveArtifacts artifacts: "archive-${env.BUILD_ID}.zip", followSymlinks: false

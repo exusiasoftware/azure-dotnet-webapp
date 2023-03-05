@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment{
+        NG_PROGRAM = fileExists '/usr/local/bin/ng'
+    }
     stages {                   
         stage('Build .Net Core') {
             steps {
@@ -30,7 +33,12 @@ pipeline {
             }
           } 
         }    
-
+        
+       stage("Approval") {
+            steps {
+               input 'Approval Stage'
+            }
+        }
 
         stage('Swap Azure WebApp Staging Production') {
           steps {

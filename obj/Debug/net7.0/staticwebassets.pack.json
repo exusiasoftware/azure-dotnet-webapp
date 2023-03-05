@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/brianrahming/dotnet/azure-dotnet-webapp/wwwroot/images/map.jpg",
+      "PackagePath": "staticwebassets/images/map.jpg"
+    },
+    {
+      "Id": "/Users/brianrahming/dotnet/azure-dotnet-webapp/wwwroot/images/newyork.jpg",
+      "PackagePath": "staticwebassets/images/newyork.jpg"
+    },
+    {
+      "Id": "/Users/brianrahming/dotnet/azure-dotnet-webapp/wwwroot/images/paris.jpg",
+      "PackagePath": "staticwebassets/images/paris.jpg"
+    },
+    {
+      "Id": "/Users/brianrahming/dotnet/azure-dotnet-webapp/wwwroot/images/sanfran.jpg",
+      "PackagePath": "staticwebassets/images/sanfran.jpg"
+    },
+    {
       "Id": "/Users/brianrahming/dotnet/azure-dotnet-webapp/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

@@ -10,6 +10,10 @@ dotnet restore
 dotnet run
 ```
 ```
+dotnet watch run
+```
+
+```
 dotnet new razor
 ```
 ```

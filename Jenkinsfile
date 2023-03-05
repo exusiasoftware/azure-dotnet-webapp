@@ -13,8 +13,7 @@ pipeline {
                 dir('bin/Release/net7.0/') {
                    sh "pwd"
                    sh "zip -r archive-${env.BUILD_ID}.zip publish"
-                   sh "ls"
-                  //  archiveArtifacts artifacts: "archive-${env.BUILD_ID}.zip", followSymlinks: false
+                   archiveArtifacts artifacts: "archive-${env.BUILD_ID}.zip", followSymlinks: false
                 }
             }
         }

@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        stage('Deploy Azure WebApp') {
+        stage('Deploy Azure WebApp Staging Slot') {
           steps {
             dir('bin/Release/net7.0/publish/') {
              //TestLogin
@@ -29,7 +29,19 @@ pipeline {
                }
             }
           } 
-        }     
+        }    
+
+
+        stage('Swap Azure WebApp Staging Production') {
+          steps {
+             //TestLogin
+               withCredentials([usernamePassword(credentialsId: '2482140b-1d99-4098-a788-8ed3c4f6b714', passwordVariable: 'secret', usernameVariable: 'clienntid')]) {
+                 sh "az login --service-principal --username $clienntid --tenant ff942d3f-5dc7-4f7b-bad2-99a174ecea1c --password $secret"
+                 sh "az webapp deployment slot swap  -g webapp-rg -n testweb-rah --slot staging --target-slot production"  
+               }
+            }
+          } 
+        }  
     }
 }    
 

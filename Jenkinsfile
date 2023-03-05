@@ -1,7 +1,9 @@
 pipeline {
     agent any
     environment{
-        NG_PROGRAM = fileExists '/usr/local/bin/ng'
+        TENANT = 'ff942d3f-5dc7-4f7b-bad2-99a174ecea1c' 
+        RESOURCEGROUP = 'webapp-rg'
+        WEBAPPNAME  = 'testweb-rah'
     }
     stages {                   
         stage('Build .Net Core') {
@@ -26,8 +28,8 @@ pipeline {
             dir('bin/Release/net7.0/publish/') {
              //TestLogin
                withCredentials([usernamePassword(credentialsId: '2482140b-1d99-4098-a788-8ed3c4f6b714', passwordVariable: 'secret', usernameVariable: 'clienntid')]) {
-                 sh "az login --service-principal --username $clienntid --tenant ff942d3f-5dc7-4f7b-bad2-99a174ecea1c --password $secret"
-                 sh "az webapp deployment source config-zip --slot staging --resource-group webapp-rg --name testweb-rah --src archive-${env.BUILD_ID}.zip"  
+                 sh "az login --service-principal --username $clienntid --tenant ${env.TENANT} --password $secret"
+                 sh "az webapp deployment source config-zip --slot staging --resource-group ${env.RESOURCEGROUP} --name ${env.WEBAPPNAME}--src archive-${env.BUILD_ID}.zip"  
  
                }
             }
@@ -44,8 +46,8 @@ pipeline {
           steps {
              //TestLogin
                withCredentials([usernamePassword(credentialsId: '2482140b-1d99-4098-a788-8ed3c4f6b714', passwordVariable: 'secret', usernameVariable: 'clienntid')]) {
-                 sh "az login --service-principal --username $clienntid --tenant ff942d3f-5dc7-4f7b-bad2-99a174ecea1c --password $secret"
-                 sh "az webapp deployment slot swap  -g webapp-rg -n testweb-rah --slot staging --target-slot production"  
+                 sh "az login --service-principal --username $clienntid --tenant ${env.TENANT} --password $secret"
+                 sh "az webapp deployment slot swap  -g ${env.RESOURCEGROUP} -n ${env.WEBAPPNAME} --slot staging --target-slot production"  
                }
           }
            

@@ -3,7 +3,7 @@ pipeline {
     stages {                   
         stage('Build .Net Core') {
             steps {
-              sh "pwd"
+              sh "dotnet restore"
               sh "dotnet publish --configuration Release"    
             }
         }

@@ -39,8 +39,8 @@ pipeline {
                  sh "az login --service-principal --username $clienntid --tenant ff942d3f-5dc7-4f7b-bad2-99a174ecea1c --password $secret"
                  sh "az webapp deployment slot swap  -g webapp-rg -n testweb-rah --slot staging --target-slot production"  
                }
-            }
-          } 
+          }
+           
         }  
     }
 }    

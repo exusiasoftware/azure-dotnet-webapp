@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hrTernSCm5JTZHJ8h/NLNb/eB/XZ+etFOqVvbp5nwfvalnSN97hzzE9O/kt7zFTlTcEd9RErnYSgBg6dqj4oAg==",
+  "dgSpecHash": "luWGb6L8pMeTO4/ZwDqGJn9ZV1bJYC6nXMqyBhj68affyQYiYLvDuVgPLBzPBGWTCSYUwJxL/xRlV4Xuy2ZXwQ==",
   "success": true,
-  "projectFilePath": "/Users/brianrahming/dotnet/azure-dotnet-webapp/azure-web-test.csproj",
+  "projectFilePath": "/Users/brianrahming/dotnet_projects/azure-dotnet-webapp/azure-web-test.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

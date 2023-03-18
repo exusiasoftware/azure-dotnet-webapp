@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/brianrahming/dotnet/azure-dotnet-webapp/azure-web-test.csproj": {}
+    "/Users/brianrahming/dotnet_projects/azure-dotnet-webapp/azure-web-test.csproj": {}
   },
   "projects": {
-    "/Users/brianrahming/dotnet/azure-dotnet-webapp/azure-web-test.csproj": {
+    "/Users/brianrahming/dotnet_projects/azure-dotnet-webapp/azure-web-test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brianrahming/dotnet/azure-dotnet-webapp/azure-web-test.csproj",
+        "projectUniqueName": "/Users/brianrahming/dotnet_projects/azure-dotnet-webapp/azure-web-test.csproj",
         "projectName": "azure-web-test",
-        "projectPath": "/Users/brianrahming/dotnet/azure-dotnet-webapp/azure-web-test.csproj",
+        "projectPath": "/Users/brianrahming/dotnet_projects/azure-dotnet-webapp/azure-web-test.csproj",
         "packagesPath": "/Users/brianrahming/.nuget/packages/",
-        "outputPath": "/Users/brianrahming/dotnet/azure-dotnet-webapp/obj/",
+        "outputPath": "/Users/brianrahming/dotnet_projects/azure-dotnet-webapp/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
